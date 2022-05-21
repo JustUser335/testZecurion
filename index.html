@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#000">
+    <meta name="description" content="template">
+    <meta name="keywords" content="template">
+    <link rel="shortcut icon" href="/img/ico/favicon.ico" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/ico/favicon-16x16.png">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Template</title>
+</head>
+<body>
+<header>
+    <div class="wrapper">
+        
+    </div>
+</header>
+<div class="container data">
+    <div class="data__wrapper wrapper">
+        <div class="data__condition-general condition-general">
+            <div class="condition-general__wrapper wrapper">
+                <div data-total-incidents class="condition-general__container">
+                    <div>
+                        <h5 class="condition-general__caption caption _h5">Всего инцидентов</h5>
+                    </div>
+                    <div>
+                        <span class="condition-general__main-data">1576</span>
+                        <span class="condition-general__percent-сhange _color-angle-red" data-percent-сhange="top">+16%</span>
+                    </div>
+                </div>
+                <div data-high-importance class="condition-general__container">
+                    <div>
+                        <h5 class="condition-general__caption caption _h5">Высокая важность</h5>
+                    </div>
+                    <div>
+                        <span class="condition-general__main-data _color-red">157</span>
+                        <span class="condition-general__percent-сhange _color-angle-red" data-percent-сhange="top">+8%</span>
+                    </div>
+                </div>
+                <div data-average-importance class="condition-general__container">
+                    <div>
+                        <h5 class="condition-general__caption caption _h5">Средняя важность</h5>
+                    </div>
+                    <div>
+                        <span class="condition-general__main-data _color-orange">253</span>
+                        <span class="condition-general__percent-сhange _color-angle-red" data-percent-сhange="top">+3%</span>
+                    </div>
+                </div>
+                <div data-total-connections class="condition-general__container">
+                    <div>
+                        <h5 class="condition-general__caption caption _h5">Всего связей</h5>
+                    </div>
+                    <div>
+                        <span class="condition-general__main-data">88</span>
+                        <span class="condition-general__percent-сhange _color-angle-black" data-percent-сhange="top">+2%</span>
+                    </div>
+                </div>
+                <div data-outgoing-traffic class="condition-general__container">
+                    <div>
+                        <h5 class="condition-general__caption caption _h5">Исходящий трафик</h5>
+                    </div>
+                    <div>
+                        <span class="condition-general__main-data">653 МБ</span>
+                        <span class="condition-general__percent-сhange _color-angle-black" data-percent-сhange="bottom">-8%</span>
+                    </div>
+                </div>
+                <div data-incoming-traffic class="condition-general__container">
+                    <div>
+                        <h5 class="condition-general__caption caption _h5">Входящий трафик</h5>
+                    </div>
+                    <div>
+                        <span class="condition-general__main-data">476 МБ</span>
+                        <span class="condition-general__percent-сhange _color-angle-black" data-percent-сhange="top">+16%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="data__content content">
+            <div class="content__wrapper text-center wrapper">
+                Данные не обнаружены
+            </div>
+        </div>
+        <div class="data__condition-detailed condition-detailed">
+            <div class="condition-detailed__wrapper wrapper">
+                <div class="condition-detailed__users-incident">
+                    <div>
+                        <h4 class="caption _h4">пользователи по инцидентам</h4>
+                    </div>
+                    <div class="condition-detailed__table-container">
+                        <div class="condition-detailed_scroll">
+                            <table data-users-incident class="condition-detailed__users-incident users-incident table">
+                                <!--
+                                    data-table-*****-importance="more"
+                                    data-table-*****-importance="equals"
+                               -->
+                                <tr>
+                                    <th colspan="3">Пользователь</th>
+                                    <th colspan="5">Инциденты</th>
+                                </tr>
+                                <tr>
+                                    <td data-table-user-name >Андрей Иванов</td>
+                                    <td></td>
+                                    <td colspan="2" data-table-height-importance="more">
+                                        <div class="table_alignment users-incident_size-768">
+                                            <span data-val class="users-incident_value-color">50</span>
+                                            <span class="users-incident__indication _red"></span>
+                                        </div>
+                                    </td>
+                                    <td colspan="2" data-table-avarage-importance="more">
+                                        <div class="table_alignment users-incident_size-768">
+                                            <span data-val class="users-incident_value-color">18</span>
+                                            <span class="users-incident__indication _orange"></span>
+                                        </div>
+                                    </td>
+                                    <td colspan="2" data-table-light-importance="more">
+                                        <div class="table_alignment users-incident_size-768">
+                                            <span data-val class="users-incident_value-color">31</span>
+                                            <span class="users-incident__indication _green"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-table-user-name >Андрей Иванов</td>
+                                    <td></td>
+                                    <td colspan="2" data-table-height-importance="equals">
+                                        <div class="table_alignment users-incident_size-768">
+                                            <span data-val class="users-incident_value-color">0</span>
+                                            <span class="users-incident__indication _red"></span>
+                                        </div>
+                                    </td>
+                                    <td colspan="2" data-table-avarage-importance="equals">
+                                        <div class="table_alignment users-incident_size-768">
+                                            <span data-val class="users-incident_value-color">0</span>
+                                            <span class="users-incident__indication _orange"></span>
+                                        </div>
+                                    </td>
+                                    <td colspan="2" data-table-light-importance="equals">
+                                        <div class="table_alignment users-incident_size-768">
+                                            <span data-val class="users-incident_value-color" >0</span>
+                                            <span class="users-incident__indication _green"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-table-user-name >Андрей Иванов</td>
+                                    <td></td>
+                                    <td colspan="2" data-table-height-importance="more">
+                                        <div class="table_alignment users-incident_size-768">
+                                            <span data-val class="users-incident_value-color">50</span>
+                                            <span class="users-incident__indication _red"></span>
+                                        </div>
+                                    </td>
+                                    <td colspan="2" data-table-avarage-importance="more">
+                                        <div class="table_alignment users-incident_size-768">
+                                            <span data-val class="users-incident_value-color">18</span>
+                                            <span class="users-incident__indication _orange"></span>
+                                        </div>
+                                    </td>
+                                    <td colspan="2" data-table-light-importance="more">
+                                        <div class="table_alignment users-incident_size-768">
+                                            <span data-val class="users-incident_value-color">31</span>
+                                            <span class="users-incident__indication _green"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-table-user-name >Андрей Иванов</td>
+                                    <td></td>
+                                    <td colspan="2" data-table-height-importance="equals">
+                                        <div class="table_alignment users-incident_size-768">
+                                            <span data-val class="users-incident_value-color">0</span>
+                                            <span class="users-incident__indication _red"></span>
+                                        </div>
+                                    </td>
+                                    <td colspan="2" data-table-avarage-importance="equals">
+                                        <div class="table_alignment users-incident_size-768">
+                                            <span data-val class="users-incident_value-color">0</span>
+                                            <span class="users-incident__indication _orange"></span>
+                                        </div>
+                                    </td>
+                                    <td colspan="2" data-table-light-importance="equals">
+                                        <div class="table_alignment users-incident_size-768">
+                                            <span data-val class="users-incident_value-color" >0</span>
+                                            <span class="users-incident__indication _green"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-table-user-name >Андрей Иванов</td>
+                                    <td></td>
+                                    <td colspan="2" data-table-height-importance="more">
+                                        <div class="table_alignment users-incident_size-768">
+                                            <span data-val class="users-incident_value-color">50</span>
+                                            <span class="users-incident__indication _red"></span>
+                                        </div>
+                                    </td>
+                                    <td colspan="2" data-table-avarage-importance="more">
+                                        <div class="table_alignment users-incident_size-768">
+                                            <span data-val class="users-incident_value-color">18</span>
+                                            <span class="users-incident__indication _orange"></span>
+                                        </div>
+                                    </td>
+                                    <td colspan="2" data-table-light-importance="more">
+                                        <div class="table_alignment users-incident_size-768">
+                                            <span data-val class="users-incident_value-color">31</span>
+                                            <span class="users-incident__indication _green"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-table-user-name >Андрей Иванов</td>
+                                    <td></td>
+                                    <td colspan="2" data-table-height-importance="equals">
+                                        <div class="table_alignment users-incident_size-768">
+                                            <span data-val class="users-incident_value-color">0</span>
+                                            <span class="users-incident__indication _red"></span>
+                                        </div>
+                                    </td>
+                                    <td colspan="2" data-table-avarage-importance="equals">
+                                        <div class="table_alignment users-incident_size-768">
+                                            <span data-val class="users-incident_value-color">0</span>
+                                            <span class="users-incident__indication _orange"></span>
+                                        </div>
+                                    </td>
+                                    <td colspan="2" data-table-light-importance="equals">
+                                        <div class="table_alignment users-incident_size-768">
+                                            <span data-val class="users-incident_value-color" >0</span>
+                                            <span class="users-incident__indication _green"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-table-user-name >Андрей Иванов</td>
+                                    <td></td>
+                                    <td colspan="2" data-table-height-importance="more">
+                                        <div class="table_alignment users-incident_size-768">
+                                            <span data-val class="users-incident_value-color">50</span>
+                                            <span class="users-incident__indication _red"></span>
+                                        </div>
+                                    </td>
+                                    <td colspan="2" data-table-avarage-importance="more">
+                                        <div class="table_alignment users-incident_size-768">
+                                            <span data-val class="users-incident_value-color">18</span>
+                                            <span class="users-incident__indication _orange"></span>
+                                        </div>
+                                    </td>
+                                    <td colspan="2" data-table-light-importance="more">
+                                        <div class="table_alignment users-incident_size-768">
+                                            <span data-val class="users-incident_value-color">31</span>
+                                            <span class="users-incident__indication _green"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-table-user-name >Андрей Иванов</td>
+                                    <td></td>
+                                    <td colspan="2" data-table-height-importance="equals">
+                                        <div class="table_alignment users-incident_size-768">
+                                            <span data-val class="users-incident_value-color">0</span>
+                                            <span class="users-incident__indication _red"></span>
+                                        </div>
+                                    </td>
+                                    <td colspan="2" data-table-avarage-importance="equals">
+                                        <div class="table_alignment users-incident_size-768">
+                                            <span data-val class="users-incident_value-color">0</span>
+                                            <span class="users-incident__indication _orange"></span>
+                                        </div>
+                                    </td>
+                                    <td colspan="2" data-table-light-importance="equals">
+                                        <div class="table_alignment users-incident_size-768">
+                                            <span data-val class="users-incident_value-color" >0</span>
+                                            <span class="users-incident__indication _green"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-table-user-name >Андрей Иванов</td>
+                                    <td></td>
+                                    <td colspan="2" data-table-height-importance="more">
+                                        <div class="table_alignment users-incident_size-768">
+                                            <span data-val class="users-incident_value-color">50</span>
+                                            <span class="users-incident__indication _red"></span>
+                                        </div>
+                                    </td>
+                                    <td colspan="2" data-table-avarage-importance="more">
+                                        <div class="table_alignment users-incident_size-768">
+                                            <span data-val class="users-incident_value-color">18</span>
+                                            <span class="users-incident__indication _orange"></span>
+                                        </div>
+                                    </td>
+                                    <td colspan="2" data-table-light-importance="more">
+                                        <div class="table_alignment users-incident_size-768">
+                                            <span data-val class="users-incident_value-color">31</span>
+                                            <span class="users-incident__indication _green"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-table-user-name >Андрей Иванов</td>
+                                    <td></td>
+                                    <td colspan="2" data-table-height-importance="equals">
+                                        <div class="table_alignment users-incident_size-768">
+                                            <span data-val class="users-incident_value-color">0</span>
+                                            <span class="users-incident__indication _red"></span>
+                                        </div>
+                                    </td>
+                                    <td colspan="2" data-table-avarage-importance="equals">
+                                        <div class="table_alignment users-incident_size-768">
+                                            <span data-val class="users-incident_value-color">0</span>
+                                            <span class="users-incident__indication _orange"></span>
+                                        </div>
+                                    </td>
+                                    <td colspan="2" data-table-light-importance="equals">
+                                        <div class="table_alignment users-incident_size-768">
+                                            <span data-val class="users-incident_value-color" >0</span>
+                                            <span class="users-incident__indication _green"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="condition-detailed__site-categories">
+                    <div>
+                        <h4 class="caption _h4">категории сайтов</h4>
+                    </div>
+                    <div class="condition-detailed__table-container">
+                        <div class="condition-detailed_scroll">
+                            <table data-site-categories class="condition-detailed__site-categories site-categories table">
+                                <!--
+                                 data-percent-сhange="top"
+                                 data-percent-сhange="bottom"
+                                 data-percent-сhange="none"
+                                 -->
+                                <tr>
+                                    <th colspan="3">Категория</th>
+                                    <th colspan="5">Количество инцидентов</th>
+                                </tr>
+                                <tr>
+                                    <td data-table-type-site>Поисковики</td>
+                                    <td></td>
+                                    <td colspan="2"></td>
+                                    <td colspan="2"></td>
+                                    <td colspan="2">
+                                        <div class="table_alignment condition-general">
+                                            <span data-val class="condition-general__main-data" >1 257</span>
+                                            <span data-percent-сhange="top" class="condition-general__percent-сhange _color-angle-green _color-angle-red">+3%</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-table-type-site>Новостные порталы</td>
+                                    <td></td>
+                                    <td colspan="2"></td>
+                                    <td colspan="2"></td>
+                                    <td colspan="2">
+                                        <div class="table_alignment condition-general">
+                                            <span data-val class="condition-general__main-data" >1 129</span>
+                                            <span data-percent-сhange="bottom" class="condition-general__percent-сhange _color-angle-green _color-angle-red">-2.1%</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-table-type-site>Развлекательные</td>
+                                    <td></td>
+                                    <td colspan="2"></td>
+                                    <td colspan="2"></td>
+                                    <td colspan="2">
+                                        <div class="table_alignment condition-general">
+                                            <span data-val class="condition-general__main-data" >987</span>
+                                            <span data-percent-сhange="top" class="condition-general__percent-сhange _color-angle-green _color-angle-red">+7%</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-table-type-site>Категория с длинным названием, которое обрезается по ширине</td>
+                                    <td></td>
+                                    <td colspan="2"></td>
+                                    <td colspan="2"></td>
+                                    <td colspan="2">
+                                        <div class="table_alignment condition-general">
+                                            <span data-val class="condition-general__main-data" >596</span>
+                                            <span data-percent-сhange="bottom" class="condition-general__percent-сhange _color-angle-green _color-angle-red">-3%</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="condition-detailed__discipline">
+                    <div>
+                        <h4 class="caption _h4">дисциплина</h4>
+                    </div>
+                    <div class="condition-detailed__table-container">
+                        <div class="condition-detailed_scroll">
+                            <table data-discipline class="condition-detailed__discipline discipline table">
+                                <!--
+                                data-difference-time = 'more'+
+                                data-difference-time = 'less'+
+                                data-difference-time = 'equals'
+                                 -->
+                                <tr>
+                                    <th>Дата</th>
+                                    <th>Приход</th>
+                                    <th>Уход</th>
+                                    <th>Рабочее время</th>
+                                </tr>
+                                <tr data-row-discipline id="timestamp1" >
+                                    <td data-date>20.04</td>
+                                    <td data-time-in="timestamp">
+                                        <span data-time>08:07</span>
+                                        <span data-difference-time="more" class="discipline_font discipline_red discipline_green">+7мин</span></td>
+                                    <td data-time-out="timestamp">
+                                        <span data-time>16:55</span>
+                                        <span data-difference-time="less" class="discipline_font discipline_red discipline_green">-5мин</span>
+                                    </td>
+                                    <td data-allTime="less" class="discipline_red discipline_green">07:48</td>
+                                </tr>
+                                <tr data-row-discipline id="timestamp2" >
+                                    <td data-date>19.04</td>
+                                    <td data-time-in="timestamp">
+                                        <span data-time>07:56</span>
+                                        <span data-difference-time="less" class="discipline_font discipline_red discipline_green">-4мин</span></td>
+                                    <td data-time-out="timestamp">
+                                        <span data-time>16:56</span>
+                                        <span data-difference-time="more" class="discipline_font discipline_red discipline_green">+4мин</span>
+                                    </td>
+                                    <td data-allTime="equals" class="discipline_red discipline_green">08:00</td>
+                                </tr>
+                                <tr data-row-discipline id="timestamp3" >
+                                    <td data-date>18.04</td>
+                                    <td data-time-in="timestamp">
+                                        <span data-time>09:30</span>
+                                        <span data-difference-time="more" class="discipline_font discipline_red discipline_green">+1ч 30мин</span></td>
+                                    <td data-time-out="timestamp">
+                                        <span data-time>18:30</span>
+                                        <span data-difference-time="more" class="discipline_font discipline_red discipline_green">+1ч 30мин</span>
+                                    </td>
+                                    <td data-allTime="equals" class="discipline_red discipline_green">08:00</td>
+                                </tr>
+                                <tr data-row-discipline id="timestamp4" >
+                                    <td data-date>14.04</td>
+                                    <td data-time-in="timestamp">
+                                        <span data-time>08:00</span>
+                                        <span data-difference-time="equals" classdiscipline_font ="discipline_red discipline_green">—</span></td>
+                                    <td data-time-out="timestamp">
+                                        <span data-time>16:57</span>
+                                        <span data-difference-time="less" class="discipline_font discipline_red discipline_green">-3мин</span>
+                                    </td>
+                                    <td data-allTime="less" class="discipline_red discipline_green">07:57</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="wrapper">
+
+    </div>
+</footer>
+
+<script src="./scripts/main.js"></script>
+</body>
+</html>

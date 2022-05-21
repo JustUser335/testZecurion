@@ -1,0 +1,182 @@
+
+.condition-detailed
+  &__wrapper
+    justify-content: space-between
+    display: grid
+    grid-template: 1fr/repeat(3, 1fr)
+    grid-gap: 30px
+    width: calc(100%)
+    > div
+      width: 100%
+  &__table-container
+    max-height: 210px
+    overflow: hidden
+  &_scroll
+    overflow-y: scroll
+    overflow-x: hidden
+    max-height: 210px
+    width: calc(100% + 17px)
+  table
+    width: 100%
+    th
+      font-weight: normal
+      font-size: $fz12
+      color: $color-grey-2
+  .caption
+    font-weight: 300
+    text-transform: uppercase
+  &__users-incident,&__site-categories
+    tr
+      th
+        &:nth-child(1)
+          width: 320px
+        &:nth-child(2)
+          width: 160px
+          text-align: right
+@media all and (max-width: 1280px)
+  .condition-detailed
+    &__wrapper
+      grid-template: repeat(2, auto)/repeat(2, 1fr)
+      justify-content: center
+    &__discipline
+      grid-column-start: 1
+      grid-column-end: 3
+      max-width: 768px
+      margin: auto
+@media all and (max-width: 1024px)
+  .condition-detailed
+    &__table-container
+    &_scroll
+      width: 100%
+@media all and (max-width: 768px)
+  .condition-detailed
+    &__wrapper
+      grid-template: repeat(3, auto)/1fr
+      grid-column-gap: 0
+    &__site-categories
+      grid-column-start: 1
+      grid-column-end: 3
+      max-width: 768px
+      margin: auto
+
+
+.table
+  *
+    font-weight: normal
+    font-size: $fz13
+    line-height: normal
+  &_alignment
+    display: flex
+    align-items: center
+    justify-content: space-around
+  tr
+    border: 1px solid $color-grey-2
+    border-right: none
+    border-left: none
+    height: 30px
+    &:first-child
+      border-top: none
+
+.users-incident
+  &__indication
+    display: inline-block
+    width: 10px
+    height: 10px
+    border-radius: 50%
+  &__indication._red,
+  &__indication._orange,
+  &__indication._green
+    background: #fff
+    border: 1px solid $color-grey
+  [data-table-height-importance="more"],
+  [data-table-avarage-importance="more"],
+  [data-table-light-importance="more"]
+    .users-incident__indication._red
+      background: $color-red-table
+      border: 1px solid $color-red-table-1
+    .users-incident__indication._orange
+      background: $color-orange-table
+      border: 1px solid $color-orange-table-1
+    .users-incident__indication._green
+      background: $color-green-table
+      border: 1px solid $color-green-table-1
+  [data-table-height-importance="equals"],
+  [data-table-avarage-importance="equals"],
+  [data-table-light-importance="equals"]
+    .users-incident_value-color
+      color: $color-grey-2
+    .users-incident__indication._red
+      border: 1px solid $color-red-table-1
+    .users-incident__indication._orange
+      border: 1px solid $color-orange-table-1
+    .users-incident__indication._green
+      border: 1px solid $color-green-table-1
+@media all and (max-width: 1280px)
+  .users-incident
+    &_size-768
+      max-width: 45px
+    .table_alignment
+      margin: 0 0 0 auto
+
+.site-categories
+  .table_alignment
+    align-items: flex-end
+    justify-content: flex-start
+    max-width: 72px
+    margin: 0 0 0 auto
+  .condition-general
+    &__main-data
+      font-weight: 600
+      font-size: $fz13
+      margin-right: 5px
+    &__percent-сhange
+      font-weight: normal
+      font-size: $fz9
+      color: $color-grey-2
+    [data-percent-сhange="top"]._color-angle-red
+      &:before
+        border-bottom: 5px solid #ee3461
+
+.discipline
+  &_font
+    font-size: $fz11
+    font-weight: normal
+  tr
+    th
+      &:nth-child(1)
+        width: auto
+      &:nth-child(2)
+        width: 140px
+        text-align: center
+      &:nth-child(3)
+        width: 140px
+        text-align: center
+      &:last-child
+        width: 100px
+        text-align: center
+    td
+      &:nth-child(2),
+      &:nth-child(3)
+        text-align: left
+        padding: 0 10px
+      &:last-child
+        text-align: center
+  [data-time-in]
+    > [data-difference-time="more"].discipline_red
+      color: $color-red-table
+    > [data-difference-time="less"].discipline_green
+      color: $color-green-table
+  [data-time-out]
+    > [data-difference-time="less"].discipline_red
+      color: $color-red-table
+    > [data-difference-time="more"].discipline_green
+      color: $color-green-table
+  [data-allTime="more"].discipline_green
+    color: $color-green-table
+  [data-allTime="less"].discipline_red
+    color: $color-red-table
+  [data-allTime="equals"].discipline_green,
+  [data-allTime="more"].discipline_green
+    color: $color-green-table
+  [data-allTime="less"].discipline_red
+    color: $color-red-table

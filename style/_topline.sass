@@ -1,0 +1,100 @@
+.condition-general
+  &__wrapper
+    justify-content: space-between
+  &__container
+    width: 100%
+    border-right: 1px solid $color-grey
+    padding-left: 20px
+    &:first-child
+      padding-left: 0
+    &:last-child
+      border-right: none
+  &__caption
+    color: $color-grey-1
+  &__main-data
+    font-weight: bold
+    color: $color-black
+    font-size: $fz24
+  &__main-data._color-orange
+    color: $color-orange
+  &__main-data._color-red
+    color: $color-red-1
+  &__percent-сhange
+    font-weight: 600
+    color: $color-black
+    font-size: $fz13
+  [data-percent-сhange]
+    position: relative
+    &::before
+      content: ""
+      display: block
+      position: absolute
+      width: 0
+      height: 0
+      top: -3px
+      left: -10px
+      right: 0
+      margin: auto
+  [data-percent-сhange="bottom"]
+    &::before
+      border-left: 4px solid transparent
+      border-right: 4px solid transparent
+  [data-percent-сhange="bottom"]._color-angle-red
+    &::before
+      border-top: 5px solid $color-red-2
+  [data-percent-сhange="bottom"]._color-angle-orange
+    &::before
+      border-top: 5px solid $color-orange
+  [data-percent-сhange="bottom"]._color-angle-black
+    &::before
+      border-top: 5px solid $color-black
+  [data-percent-сhange="bottom"]._color-angle-green
+    &::before
+      border-top: 5px solid $color-green
+
+  [data-percent-сhange="top"]
+    &::before
+      border-left: 4px solid transparent
+      border-right: 4px solid transparent
+  [data-percent-сhange="top"]._color-angle-red
+    &::before
+      border-bottom: 5px solid $color-red-2
+  [data-percent-сhange="top"]._color-angle-orange
+    &::before
+      border-bottom: 5px solid $color-orange
+  [data-percent-сhange="top"]._color-angle-black
+    &::before
+      border-bottom: 5px solid $color-black
+  [data-percent-сhange="top"]._color-angle-green
+    &::before
+      border-bottom: 5px solid $color-green
+@media all and (min-width: 769px) and (max-width: 980px)
+  .condition-general
+    &__wrapper
+      display: grid
+      grid-template: 1fr 1fr/ repeat(3,1fr)
+      grid-row-gap: 20px
+    &__container
+      width: 100%
+      border-right: 1px solid $color-grey
+      padding-left: 20px
+      &:first-child,
+      &:nth-child(4)
+        padding-left: 0
+      &:last-child,
+      &:nth-child(3)
+        border-right: none
+@media all and (max-width: 768px)
+  .condition-general
+    &__wrapper
+      display: grid
+      grid-template: 1fr 1fr 1fr/ repeat(2,1fr)
+      grid-row-gap: 20px
+    &__container
+      width: 100%
+      border-right: 1px solid $color-grey
+      padding-left: 20px
+      &:nth-child(odd)
+        padding-left: 0
+      &:nth-child(even)
+        border-right: none
